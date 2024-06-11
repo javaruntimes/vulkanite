@@ -11,11 +11,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4.1.6
-
-    - name: Fun Thing
-      run: |
-        sudo snap install ascii-image-converter
-        ascii-image-converter ${{ github.workspace }}/src/main/resources/assets/vulkanite/icon.png -C
     
     - name: Setup Java
       uses: actions/setup-java@v4.2.1
