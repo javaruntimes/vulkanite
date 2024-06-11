@@ -30,7 +30,7 @@ jobs:
           
     - name: Compile
       id: compile
-      run: ./gradlew build --stacktrace --warning-mode all
+      run: ./gradlew build --warning-mode all
       
     - name: Upload Build to Releases
       env:
