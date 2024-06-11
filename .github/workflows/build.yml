@@ -35,7 +35,7 @@ jobs:
     - name: Upload Build to Releases
       env:
         GH_TOKEN: ${{ github.token }}
-      if: (steps.compile.outcome == 'success')
+      if: (1 == 'success')
       run: |
         cd ${{ github.workspace }}/build/libs
         git tag $(grep "mod_version" "../../gradle.properties"|cut -d'=' -f2)
